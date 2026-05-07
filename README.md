@@ -1,5 +1,60 @@
-# Vue 3 + TypeScript + Vite
+# TV Show List
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+ABN AMRO test assignment - A Vue 3 application that displays TV shows from the [TVmaze API](https://api.tvmaze.com), grouped by genre with search functionality and paginated loading.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Tech Stack
+
+- **Vue 3** — Composition API with `<script setup lang="ts">`
+- **TypeScript**
+- **Vite** — dev server and build tool
+- **Vue Router** — client-side routing
+- **Vitest** — unit testing with happy-dom
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Development
+
+```sh
+npm run dev
+```
+
+### Build
+
+```sh
+npm run build
+```
+
+### Run Tests
+
+```sh
+npm test
+```
+
+### Watch Mode
+
+```sh
+npm run test:watch
+```
+
+### Coverage
+
+```sh
+npm run test:coverage
+```
+
+## Project Structure
+
+```
+src/
+├── api/            # API service functions (TVmaze)
+├── composables/    # Reusable composables (useFetch, useShowsPaginated, queries)
+├── components/     # UI components (ShowCard, ShowListItem, SearchBar, SearchDropdown)
+├── views/          # Page components (HomePage, ShowDetailPage)
+├── router/         # Vue Router configuration
+├── types/          # TypeScript interfaces
+└── __fixtures__/   # Test fixtures
+```
